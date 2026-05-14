@@ -4,35 +4,29 @@
 
 ---
 
-## D-4 (Thursday May 21) — Pre-launch awareness
+## D-4 (Thursday May 28) — Pre-launch awareness
 
 ### r/SideProject (~120k members, indie-friendly)
 
 **Title**:
-`After 6 weeks of nights and weekends — a daily US-states puzzle (Wordle for geography). Launch May 25.`
+`Statedoku — daily US-states puzzle launching June 1. Signup page open.`
 
 **Body**:
 ```
 Hi r/SideProject —
 
-I've been building a small daily game called Statedoku for the past 6 weeks.
+Daily puzzle game launching Monday June 1: Statedoku.
+
 It's a 3×3 grid where each cell must hold a US state that satisfies both
-the row and column constraints (e.g. "Pacific coast × borders Mexico = California").
-Sudoku rules — each state used at most once. 3 mistakes allowed.
+the row and column constraints. Sudoku rules — each state used once. 3 mistakes
+allowed. Free, no signup to play, no ads, no tracking. Multilingual EN/FR/ES.
 
-It's been a fun build:
-- Vanilla JS, no framework
-- Hosted on Cloudflare Pages (free tier, sub-100ms globally)
-- Cloudflare D1 for analytics, Worker cron for the Twitter bot
-- 100+ hand-curated constraints (regions, borders, name origin, sports, etc.)
-- Multilingual: EN / FR / ES
-- No accounts, no tracking, no ads. Just the puzzle.
+Signup for Day #1 in your inbox: https://statedoku.com/launch/
 
-The official launch is **Monday May 25** but the site is live now if you want
-to give Day 0 a spin: https://statedoku.com
+Live preview if curious: https://statedoku.com (the puzzle is already running
+daily, but official Day #1 is June 1 when the public launch starts).
 
-Happy to chat about the technical side, the constraint-design hell, or
-the marketing strategy I'm trying. Honest feedback welcome.
+Open to feedback — what works, what's weird, what constraints you'd want to see.
 ```
 
 ---
@@ -57,13 +51,14 @@ Examples of constraints:
 Each state used at most once. 3 mistakes allowed. The puzzle is the same
 for everyone in the world that day.
 
-Looking for feedback from the geo crowd before official launch May 25:
-1. Are the constraints fair? (I curated ~100 — no obscure trivia)
-2. Anything missing? (e.g. constraint types you'd love to see)
+Looking for feedback from the geo crowd before official launch June 1:
+1. Are the constraints fair? (~100 curated, no obscure trivia)
+2. Anything missing? (constraint types you'd want to see)
 
-Site: https://statedoku.com
+Site: https://statedoku.com — site already live for preview, official Day #1 = June 1.
+Signup for Day #1 in your inbox: https://statedoku.com/launch/
 
-It's free, no signup, runs in the browser.
+Free, no signup to play, runs in the browser.
 ```
 
 ---
@@ -94,34 +89,28 @@ https://statedoku.com — free, no signup. Daily reset at midnight.
 
 ---
 
-## D-0 (Monday May 25) — Launch day
+## D-0 (Monday June 1) — Launch day
 
 ### r/SideProject (do NOT repost the D-4 one — make this a launch update)
 
 **Title**:
-`Launched my daily US-states puzzle today (Statedoku). 6 weeks indie build, AMA on the tech.`
+`Day #1 of Statedoku is live — daily US-states puzzle, free, no signup`
 
 **Body**:
 ```
-6 weeks ago I started building a daily puzzle (Statedoku) — Wordle for
-US geography. Today's the official launch day with Day #1 of the daily series.
+Statedoku is live as of today. 3×3 daily grid where each cell must hold a
+US state satisfying both row and column constraints. Sudoku-like rules, 3
+mistakes allowed, emoji-grid share at the end.
 
-Stack rundown if anyone's curious:
-- Cloudflare Pages (static site, no backend code in the main app)
-- Cloudflare D1 + Pages Functions for analytics
-- Cloudflare Worker (Twitter bot, Resend for daily email reminders)
-- Anthropic Claude API for the Twitter bot's daily tweet content
-- Total cost: ~$0.30/month at current traffic
-
-Some technical choices I'd love feedback on:
-1. Puzzle generator runs entirely client-side, deterministic from the date
-2. Hard cap on "dominant states" (CA/NY/TX) — max 2 per puzzle solution
-3. ~100 curated constraints + 87 active, hand-tuned for fairness
-
-What I learned about indie launching, top regret, what surprised me — happy
-to share in comments.
+Free. No signup. No ads. No tracking. Daily reset at midnight.
+Multilingual EN/FR/ES.
 
 https://statedoku.com
+
+Today's grid: rows are Central / Mountain / Pacific time zones; columns are
+borders Mexico / contains W / swing state.
+
+Open to feedback on constraints, UX, anything.
 ```
 
 ---
